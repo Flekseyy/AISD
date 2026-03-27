@@ -21,7 +21,7 @@ class ProcessLinked
         
         fruits.AddLast("Apple");
         fruits.AddLast("Banana");
-        Console.WriteLine("\nПосле AddLast:");
+        Console.WriteLine("После AddLast:");
         fruits.Print();
         
         fruits.AddFirst("Orange");
@@ -39,7 +39,7 @@ class ProcessLinked
         CustomLinkedList<int> toRemove = new CustomLinkedList<int>(new[] { 10, 20, 30, 40, 50 });
         
         toRemove.RemoveFirst();
-        Console.WriteLine("\nПосле RemoveFirst:");
+        Console.WriteLine("После RemoveFirst:");
         toRemove.Print();
         
         toRemove.RemoveLast();
@@ -69,19 +69,19 @@ class ProcessLinked
         
         bool has14 = searchList.Contains(14);
         bool has99 = searchList.Contains(99);
-        Console.WriteLine($"\nContains(14): {has14}");
+        Console.WriteLine($"Contains(14): {has14}");
         Console.WriteLine($"Contains(99): {has99}");
         
         Console.WriteLine("FindAllIndices(14):");
         searchList.FindAllIndices(14);
         
-        Console.WriteLine($"\nSize: {searchList.Size()}");
+        Console.WriteLine($"Size: {searchList.Size()}");
         
         Console.WriteLine($"IsEmpty: {searchList.IsEmpty()}");
         Console.WriteLine($"Empty.IsEmpty: {new CustomLinkedList<int>().IsEmpty()}");
 
         CustomLinkedList<int> toReverse = new CustomLinkedList<int>(new[] { 1, 2, 3, 4, 5 });
-        Console.WriteLine("\nДо Reverse:");
+        Console.WriteLine("До Reverse:");
         toReverse.Print();
         
         toReverse.Reverse();
@@ -89,7 +89,7 @@ class ProcessLinked
         toReverse.Print();
 
         CustomLinkedList<int> empty = new CustomLinkedList<int>();
-        Console.WriteLine("\nПустой список:");
+        Console.WriteLine("Пустой список:");
         empty.Print();
         
         empty.RemoveFirst();
@@ -100,7 +100,7 @@ class ProcessLinked
         
         CustomLinkedList<int> one = new CustomLinkedList<int>(999);
         one.RemoveLast();
-        Console.WriteLine("\nПосле удаления из [999]:");
+        Console.WriteLine("После удаления из [999]:");
         one.Print();
 
         CustomLinkedList<string> words = new CustomLinkedList<string>(new[] { "Hello", "World" });
@@ -113,6 +113,6 @@ class ProcessLinked
         Console.WriteLine("После Reverse:");
         words.Print();
 
-        Console.WriteLine("\nВсе примеры завершены");
+        Console.WriteLine("Все примеры завершены");
     }
 }

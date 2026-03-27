@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-
+using Task.CustomArrayList;
 using Task.CustomListWithTail;
 using Task.CustomList;
 using Task.LinkedList;
@@ -11,6 +11,8 @@ public class Program
         ProcessCustom.Run();
         ProcessTail.Run();
         ProcessLinked.Run();
+        ProcessArray.Run();
+        Console.WriteLine();
         ProcessUniversal();
     }
 
