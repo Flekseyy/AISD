@@ -1,4 +1,4 @@
-﻿namespace Aisd;
+﻿namespace Classwork;
 public class CustomList<T>
 {
     private Node<T> _firstNode;

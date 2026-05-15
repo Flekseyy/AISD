@@ -1,4 +1,4 @@
-﻿namespace Aisd;
+﻿namespace Classwork;
 
 public class Node<T>
 {

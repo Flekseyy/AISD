@@ -2,13 +2,13 @@
 /// <summary>
 /// Узел линейного списка
 /// </summary>
-public class Node
+public class NodeA
 {
     public int Info;
-    public Node NextNode;
+    public NodeA NextNode;
 
     
-    public Node(int info)
+    public NodeA(int info)
     {
         Info = info;
     }

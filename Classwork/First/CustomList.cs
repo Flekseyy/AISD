@@ -1,15 +1,15 @@
 ﻿namespace Aisd;
 
-public class CustomList
+public class CustomListaA
 {
-    private Node firstNode;
+    private NodeA firstNode;
 
-    public CustomList(int num)
+    public CustomListaA(int num)
     {
-        firstNode = new Node(num);
+        firstNode = new NodeA(num);
     }
 
-    public CustomList(int[] nums)
+    public CustomListaA(int[] nums)
     {
         for (int i = nums.Length - 1; i >= 0; i--)
         {
@@ -24,7 +24,7 @@ public class CustomList
     /// <param name="num"></param>
     public void Add(int num)
     {
-        var newNode = new Node(num);
+        var newNode = new NodeA(num);
         newNode.NextNode = firstNode;
         firstNode = newNode;
     }
@@ -46,7 +46,7 @@ public class CustomList
             return;
         }
         
-        Node tempNode = firstNode;
+        NodeA tempNode = firstNode;
         while (tempNode.NextNode.NextNode != null)
         {
             tempNode = tempNode.NextNode;
@@ -64,7 +64,7 @@ public class CustomList
             return;
         }
         
-        Node tempNode = firstNode;
+        NodeA tempNode = firstNode;
         while (tempNode != null)
         {
             Console.Write($"{tempNode.Info} "+ (tempNode.NextNode==null?"":"-> "));

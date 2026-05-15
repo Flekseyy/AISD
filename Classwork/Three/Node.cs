@@ -1,5 +1,4 @@
-﻿namespace Aisd;
-
+﻿namespace Classwork;
 public class LinkedNode<T>
 {
     public T Info;

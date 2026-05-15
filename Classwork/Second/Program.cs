@@ -1,4 +1,4 @@
-﻿namespace Aisd;
+﻿namespace Classwork;
 class Program1
 {
     public static void Run2()

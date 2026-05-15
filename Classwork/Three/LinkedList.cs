@@ -1,5 +1,4 @@
-﻿namespace Aisd;
-
+﻿namespace Classwork;
 public class LinkedList<T>
 {
     private LinkedNode<T> _firstNode;
